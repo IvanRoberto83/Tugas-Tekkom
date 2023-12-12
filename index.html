@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>@r.van83 - 71230986 - Personal Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>
+            <b>
+                Welcome to my Personal Webpage
+            </b>
+        </h1>
+    </header>
+
+    <section id="borderimg">
+        <h1>
+            Anak Informatika
+            <a href="https://www.ukdw.ac.id/">UKDW</a>
+        </h1>
+    </section>
+
+    <section id="display">
+        <a href="https://www.instagram.com/r.van83/">
+            <img alt="Foto Saya" src="foto diri.jpg" width="250">
+        </a>
+    </section>
+
+    <section id="nama">
+        <h2>Ivan Roberto Halim</h2>
+        <hr>
+    </section>
+
+    <section id="tentang-saya" class="body">
+        <h2>About Me</h2>
+        <p>Instagram: @r.van83</p>
+        <p>Umur: 18 Tahun</p>
+        <p>Prodi: Informatika</p>
+        <p>Kota: Yogyakarta</p>
+        <p>Propinsi: DIY</p>
+        <p>Negara: Indonesia</p>
+    </section>
+
+    <hr>
+
+    <section class="body">
+        <h4>Skillset: </h4>
+        <ul id="list">
+            <li>C</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </section>
+    
+    <button id="tombolGantiWarna" class="body"> 
+        Ganti Warna Background 
+    </button>
+
+    <p id="instruksi">[klik tombol di atas untuk mengganti warna background]</p>
+
+    <footer class="footer">
+        <p>
+            Thank you for visiting my personal web page
+            <br>
+            <br>
+            <a href="https://www.instagram.com/r.van83/" style="color:lightblue">
+                @r.van83
+            </a>
+        </p>
+    </footer>
+
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRandom() {
+            const warnaList = ["silver","gold", "white"];
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = document.getElementById('tombolGantiWarna');
+        tombolGantiWarna.addEventListener('click', gantiWarnaRandom);
+    </script>
+
+</body>
+</html>

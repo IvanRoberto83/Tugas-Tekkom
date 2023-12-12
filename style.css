@@ -1,0 +1,55 @@
+body {
+    font-family: 'BankGothic Lt BT', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+    text-align: center;
+}
+
+#instruksi {
+    font-size: small;
+    color: #363636;
+}
+
+#display{
+    display: block;
+    border: 1px solid black;
+    margin: auto;
+    padding: 10px;
+    background-color: #030b35;
+    width: 19%;
+    border-radius: 1%;
+}
+
+#list {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#borderimg { 
+    border: 20px solid transparent;
+    padding: 1px;
+    border-image: url(border.png) 60 round;
+    color:rgb(3, 3, 66);
+}
+
+header {
+    background-color: #353432;
+    color: #fafaf9;
+    text-align: center;
+    padding: 1em;
+}
+
+section {
+    margin: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #353432;
+    color: #fafaf9;
+}
